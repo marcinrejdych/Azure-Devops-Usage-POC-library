@@ -5,18 +5,6 @@ pr: none
 
 variables:
 - group: 'Maven Repo Secrets'
-- name: 'dockerRegistryServiceConnection'
-  value: '20a12e97-bbaa-45b4-900a-1f7bc146a3ef'
-- name: 'imageRepository'
-  value: 'azuredevopsusagepoc'
-- name: 'containerRegistry'
-  value: 'mrejdychcontainerregistry.azurecr.io'
-- name: 'dockerfilePath'
-  value: '**/Dockerfile'
-- name: 'tag'
-  value: '$(Build.BuildId)'
-- name: 'imagePullSecret'
-  value: 'mrejdychcontainerregistrybc58-auth'
 
 pool:
   vmImage: 'ubuntu-latest'
